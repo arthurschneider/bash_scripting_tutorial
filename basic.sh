@@ -17,11 +17,19 @@ echo "This file is called $0"
 # when a script is launched everytime a new shell will be opend and the script will be executed in
 # this seperate shell
 echo
-echo "The PID of the actual shell $$"
+echo "The PID of the actual shell = $$"
+
+# to out put return value of last command
+test 20 -eq 21;
+echo "Is 20 equalt to 21 ? Answer $?"
+
+# to output PID of last started backgroundprocess
+echo
+echo "The PID of last started background process = $!"
 
 #to output the total amount of input parameters of this script
-echo 
-echo "Total amount of input parameters $#"
+echo
+echo "Total amount of input parameters = $#"
 
 # to output first and second parameter given to this script
 # to see the result call the script with ./basic.sh a b
