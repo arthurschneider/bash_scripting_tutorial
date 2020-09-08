@@ -19,15 +19,16 @@ echo
 echo "Print surname variable which is not initialized but where default value ist set = "${surname:-'Schneider'}
 
 echo
-echo "Print surname variable again surname = "$surname
+echo "Print surname variable again : surname = "$surname
 echo "You see it is still empty"
 
 echo
-echo "But with command ${var:=default} you can change the value when it was empty"
-echo "Like this surname = "${surname:='Huberty'}
+echo "But with command \${var:=default} you can change the value when it was empty"
+echo "Like this : surname = "${surname:='Huberty'}
+echo "Print surname variable again : surname = "$surname
 
 echo
-echo "With the substitution ${var:+new} the value will still be empty if it was empty"
+echo "With the substitution \${var:+new} the value will still be empty if it was empty"
 echo "But whe it was set before to a value you can use this substitution to a new value"
 city=
 echo

@@ -21,7 +21,7 @@ echo "The PID of the actual shell = $$"
 
 # to out put return value of last command
 test 20 -eq 21;
-echo "Is 20 equalt to 21 ? Answer $?"
+echo "Is 20 equalt to 21 ? Answer $?" # prints 1 --beware 0 is true 1 or anything else is false
 
 # to output PID of last started backgroundprocess
 echo

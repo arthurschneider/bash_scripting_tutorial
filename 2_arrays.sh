@@ -8,23 +8,23 @@ fruits[2]='melon'
 animals=('dog','cat','rabbit') # declares and initializes an array
 
 # Prints an element of an array
-echo "Print first element of fruits "${fruits[0]}
-echo "Print last element of fruits "${fruits[2]}
+echo "Print first element of fruits ${fruits[0]}" # prints 'apple'
+echo "Print last element of fruits ${fruits[2]}"  # prints 'melon'
 
 echo
 echo "What will happen? When we try to print a not defined element of an array?"
-echo "fruits[3] = "${fruits[3]}
-echo "return vale of last command = "$?
+echo "fruits[3] = -${fruits[3]}- " # prints ''
+echo "return vale of last command = $?"# prints 0 --beware 0 is true and 1 or anything else is false
 echo "WTF? why it is true? Did I something wrong?"
 
 # Prints whole array
 echo
-echo "To print whole array first posibility ${animals}"
+echo "To print whole array first posibility ${animals}" # prints 'dog,cat,rabbit'
 echo
-echo "To print whole array second posibility ${animals[@]}"
+echo "To print whole array second posibility ${animals[@]}" # prints 'dog,cat,rabbit'
 
-######################################################################
-######################################################################
+##############################################################
+##############################################################
 
 # Assoziative arrays
 
@@ -32,16 +32,16 @@ declare -A cars                 #you need to call declare or array will not work
 cars[ford]=mustang
 cars[suzuki]=alto
 echo
-echo "Prints first element of an assoziative array  = ${cars[ford]}"
+echo "Prints first element of an assoziative array  = ${cars[ford]}" # prints 'mustang'
 
 declare -A games
 games=( [xbox]=halo [ps4]=killzone )
 
 echo
-echo "Prints whole assoziative array '${games[@]}'"
+echo "Prints whole assoziative array '${games[@]}'" # prints 'halo killzone'
 echo "Beware: prints them in reverse order"
 echo
-echo "Try to print whole assoziative array the wrong way'${games}'"
+echo "Try to print whole assoziative array like normal arrays '${games}'" # prints ''
 
 
 #----------------------------------------------------------------------
